@@ -1,0 +1,30 @@
+{
+  "name": "theme-switcher",
+  "private": true,
+  "version": "1.0.0",
+  "files": [
+    "paseo-plugin.json",
+    "OVERVIEW.md",
+    "LICENSE",
+    "README.md",
+    "index.client.tsx",
+    "index.server.ts",
+    "client/",
+    "shared/"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.test.json",
+    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test \"client/**/*.test.ts\" \"shared/**/*.test.ts\""
+  },
+  "devDependencies": {
+    "@getpaseo/plugin": "0.15.4",
+    "@tanstack/react-query": "^5.90.11",
+    "@types/node": "^24.19.2",
+    "@types/react": "~19.2.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "typescript": "^5.9.3",
+    "zod": "^4.4.3"
+  },
+  "license": "MIT"
+}
